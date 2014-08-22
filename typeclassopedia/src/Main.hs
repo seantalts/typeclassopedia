@@ -1,16 +1,6 @@
 module Main where
 
-import Prelude hiding (Either, Left, Right)
--- Implement Functor instances for Either e and ((->) e).
-
-data Either a b = Left a | Right b
-
-instance Functor (Either e) where
-  fmap _ (Left a) = Left a
-  fmap g (Right b) = Right (g b)
-   
-instance Functor ((->) e) where
-  fmap g 
+import Functors (p)
 
 main::IO()
-main = undefined
+main = print $ fmap (+ 7) p
