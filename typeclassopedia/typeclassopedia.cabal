@@ -9,5 +9,7 @@ executable typeclassopedia
   main-is:         Main.hs
   build-depends:   base >= 4
   ghc-options:     -Wall
-  other-modules:   Functors
+  other-modules:   
+                   Functors,
+                   Appilcative
 
